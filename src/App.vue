@@ -1,12 +1,18 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div id="nav"
+       v-if="$store.state.isShow">
+    <router-link to="/"
+                 active-class="active">Home</router-link> |
+    <router-link to="/about"
+                 active-class="active">About</router-link>
   </div>
-  <router-view/>
+  <router-view />
 </template>
 
 <style lang="scss">
+.active {
+  color: #4289b9;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -20,10 +26,10 @@
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    // color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #42b983;
+      // color: #42b983;
     }
   }
 }

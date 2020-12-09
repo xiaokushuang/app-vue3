@@ -10,8 +10,12 @@ module.exports = {
   parserOptions: {
     parser: 'babel-eslint'
   },
-  rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
-  }
+  // rules: {
+  //   // 'space-before-function-paren': 0,
+  //   // 'indent': 'off',
+  //   // 'no-multiple-empty-lines': 0,
+  //   // 'space-before-function-paren': 0,
+  //   // 'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+  //   // 'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+  // }
 }
